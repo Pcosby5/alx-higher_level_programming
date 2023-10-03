@@ -2,10 +2,8 @@
 
 /**
  * insert_node - function that inserts a number
- * into a sorted singly linked list
  * @head: the linked list
  * @number: the number to insert
- *
  * Return: the address of the new node, or NULL if it failed
  */
 
