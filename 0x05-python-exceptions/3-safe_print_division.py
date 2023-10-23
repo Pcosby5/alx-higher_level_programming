@@ -1,5 +1,6 @@
 #1/usr/bin/python3
 def list_division(a, b):
+
     try:
         result = a / b
     except ZeroDivisionError:
@@ -8,4 +9,3 @@ def list_division(a, b):
         print('Inside result: {}'.format(result))
 
     return result
-
