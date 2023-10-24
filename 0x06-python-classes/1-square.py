@@ -5,5 +5,5 @@ This module defines a Square class and initialise its size
 
 
 class Square:
-    def __init__(self,  size):
+    def __init__(self, size):
         self.__size = size
