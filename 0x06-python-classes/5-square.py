@@ -9,6 +9,7 @@ It implements value and type checks for its attributes with area function
 class Square:
     """Square implementation
     """
+
     def __init__(self, size=0):
         self.size = size
 
@@ -31,8 +32,10 @@ class Square:
         return (self.__size ** 2)
 
     def my_print(self):
+        """Print an empty line"""
         if self.__size == 0:
             print('')
         else:
+            """Print #"""
             for _ in range(self.__size):
                 print("#" * self.__size)
