@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-This module defines a Square class and initialise its size
-"""
+""" This module defines a Square class and initialises it size """
 
 
 class Square:
