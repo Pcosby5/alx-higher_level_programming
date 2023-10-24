@@ -3,7 +3,7 @@
 """this is an empty class"""
 
 
-class square:
+class Square:
 
     """it has no attributes"""
 
