@@ -68,9 +68,9 @@ class SinglyLinkedList:
 
     def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
-        result = ""
+        values = []
         tmp = self.__head
-        while tmp:
-            result += str(tmp.data) + "\n"
+        while tmp is not None:
+            values.append(str(tmp.data))
             tmp = tmp.next_node
-        return result
+        return ('\n'.join(values))
