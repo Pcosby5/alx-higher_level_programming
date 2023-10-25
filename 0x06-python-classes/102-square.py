@@ -9,6 +9,7 @@ Its implements value and type checks for its attributes with area function
 class Square:
     """Square implementation
     """
+
     def __init__(self, size=0):
         self.size = size
 
@@ -38,7 +39,7 @@ class Square:
     @size.setter
     def size(self, size):
         """Sets the size"""
-        if type(size) != int:
+        if not isinstance(size, (int, float)):
             raise TypeError('size must be an integer')
         elif size < 0:
             raise ValueError('size must be >= 0')
