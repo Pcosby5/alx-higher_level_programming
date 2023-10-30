@@ -58,5 +58,6 @@ class Rectangle:
             if count != self.__height - 1:
                 shape += "\n"
         return shape
+
     def __repr__(self):
         return("Rectangle({}, {})".format(self.width, self.height))
