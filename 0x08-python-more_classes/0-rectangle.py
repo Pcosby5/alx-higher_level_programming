@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-'''an empty class'''
+
+'''empty class for rectangle'''
+
 
 class Rectangle:
-    '''an empty class which i forgot'''
+    '''forgot this useless comment'''
     pass
