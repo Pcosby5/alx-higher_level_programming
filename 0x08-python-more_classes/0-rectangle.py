@@ -4,5 +4,5 @@
 
 
 class Rectangle:
-    '''forgot this useless comment'''
+    '''empt class of a shape'''
     pass
