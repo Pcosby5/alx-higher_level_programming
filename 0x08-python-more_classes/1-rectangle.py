@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''shape of modules'''
 class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialize a Rectangle with optional width and height."""
