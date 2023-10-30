@@ -51,9 +51,6 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        shape = ""
-        for count in range(self.__height):
-            shape += "#" * self.__width
-            if count != self.__height -1:
-                shape += "\n"
-        return shape
+        else:
+            shape = "#" * self.__width
+            return "\n".join(shape for count in range(self.__height))
