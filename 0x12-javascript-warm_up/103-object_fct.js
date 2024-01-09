@@ -7,7 +7,7 @@ const myObject = {
 console.log(myObject); // Display the initial state of myObject
 
 // Define a function named incr that increments the value property of myObject
-function incr() {
+function incr () {
   this.value++; // Increment the value property of the calling object
 }
 
