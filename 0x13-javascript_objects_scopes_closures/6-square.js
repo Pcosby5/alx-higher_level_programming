@@ -6,7 +6,7 @@ const Square1 = require('./5-square');
 // Define a class named Square that extends the Square1 class
 class Square extends Square1 {
   // Instance method named charPrint that prints the square using a specified character
-  charPrint(c) {
+  charPrint (c) {
     // Check if the character is not provided
     if (!c) {
       // Print the square using 'X' characters based on the width and height
