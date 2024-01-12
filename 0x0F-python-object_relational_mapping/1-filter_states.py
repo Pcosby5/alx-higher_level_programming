@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     # Display the results
     for state in states:
-        # filter state to print sarting with N
+        # filter state to print starting with N
         if state[1].startswith("N"):
             print(state)
 
