@@ -2,13 +2,19 @@
 """List of states"""
 
 import MySQLdb
-import sys
+from sys import argv
 
 
-def list_states(username, password, database):
+if __name__ == "__main__":
     # Connect to MySQL server
-    connection = MySQLdb.connect(host="localhost", port=3306,
-            user="pcosby50", passwd="root", db=database)
+    connection = MySQLdb.connect(
+            host="localhost",
+            port=3306,
+            user=argv[1],
+            passwd=argv[2],
+            db=argv[3],
+            charset="utf8"
+    )
 
     # Create a cursor object to execute SQL queries
     cursor = connection.cursor()
@@ -26,16 +32,3 @@ def list_states(username, password, database):
     # Close the cursor and connection
     cursor.close()
     connection.close()
-
-
-if __name__ == "__main__":
-    # Check if the correct number of arguments is provided
-    if len(sys.argv) != 4:
-        print("Usage:python script.py <mysql_username> <mysql_password> <database_name>")
-    else:
-        # Extract MySQL credentials from command line arguments
-        mysql_username, mysql_password, database_name = sys.argv[1:4]
-
-        # Call the function to list states
-        list_states(mysql_username, mysql_password, database_name)
-
