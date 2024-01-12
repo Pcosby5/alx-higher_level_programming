@@ -21,14 +21,16 @@ if __name__ == "__main__":
 
     # Execute the SQL query to retrieve states
     cursor.execute(
-        "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC")
+        "SELECT * FROM states ORDER BY states.id ASC")
 
     # Fetch all the rows
     states = cursor.fetchall()
 
     # Display the results
     for state in states:
-        print(state)
+        # filter state to print sarting with N
+        if state[1].startswith("N"):
+            print(state)
 
     # Close the cursor and connection
     cursor.close()
