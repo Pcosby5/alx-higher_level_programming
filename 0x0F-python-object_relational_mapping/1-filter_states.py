@@ -28,7 +28,6 @@ if __name__ == "__main__":
 
     # Display the results
     for state in states:
-        # if state[1].startswith("N"):
         print(state)
 
     # Close the cursor and connection
