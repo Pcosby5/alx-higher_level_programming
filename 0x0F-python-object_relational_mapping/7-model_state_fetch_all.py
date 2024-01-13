@@ -2,9 +2,9 @@
 """List all states"""
 
 import sys
-from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from model_state import Base, State
 
 if __name__ == "__main__":
     # Create a SQLAlchemy engine to connect to the database
