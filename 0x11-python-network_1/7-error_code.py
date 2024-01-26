@@ -14,4 +14,4 @@ if __name__ == "__main__":
     if req_url.status_code >= 400:
         print("Error code: {}".format(req_url.status_code))
     else:
-        print(r.text)
+        print(req_url.text)
