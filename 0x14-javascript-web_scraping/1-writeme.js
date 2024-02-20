@@ -9,11 +9,11 @@ const filename = process.argv[2];
 // Get the string to write
 const stringToWrite = process.argv[3];
 
-// Read the content of the file
-fs.writeFile(filename, stringToWrite, 'utf-8', (error, data) => {
+// Write the content of the file
+fs.writeFile(filename, stringToWrite, 'utf-8', (error) => {
   if (error) {
     console.log(error);
-  } else {
-    console.log(data);
+  /* } else {
+    console.log(data); */
   }
 });
